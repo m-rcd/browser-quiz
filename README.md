@@ -10,4 +10,4 @@ I would like to answer multiple choice questions
 
 Diagram
 ---
-![Diagram](Diagram.png)
+![Diagram](./assets/diagram.png)
