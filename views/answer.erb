@@ -1,0 +1,7 @@
+<% @question.each do |k, v| %>
+<% if @answer == v[:correct] %>
+  <p> CORRECT!! </p>
+  <% else %>
+  <p> WRONG!!</p>
+  <%end%>
+  <%end%>

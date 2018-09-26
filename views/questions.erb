@@ -1,0 +1,16 @@
+<ul>
+  <form action='/answer' method='post'>
+    <% @question.each do |k, v| %>
+  <%= k%>
+  <br>
+    <br><input type='radio' value=<%=v[:wrong][0]%> name='answer' id='wrong1'> <%=v[:wrong][0]%><br>
+    <input type='radio' value=<%=v[:wrong][1]%> name='answer' id='wrong2'> <%=v[:wrong][1]%><br>
+    <input type='radio' value=<%= v[:correct]%> name='answer'id='correct' > <%=v[:correct]%><br>
+    <input type='radio' value=<%= v[:wrong][2]%> name='answer'id='wrong3'> <%=v[:wrong][2]%><br>
+    <% end %>
+    <br>
+    <br>
+
+    <input type='submit' value='Submit' >
+  </form>
+</ul>
