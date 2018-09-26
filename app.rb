@@ -22,5 +22,6 @@ class BrowserQuiz < Sinatra::Base
     erb :answer
   end
 
+
   run! if app_file == $0
 end
