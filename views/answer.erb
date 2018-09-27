@@ -1,13 +1,7 @@
-<% @question.each do |k, v| %>
-<% if @answer == v[:correct] %>
-  <p> CORRECT!! </p>
-  <% else %>
-  <p> WRONG!!</p>
-  <%end%>
-  <%end%>
+
 
 <br>
 <br>
-<form action='/questions' method='post'>
+<form action='/questions' method='get'>
   <input type='submit' value='MORE QUESTIONS!'>
 </form>

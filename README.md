@@ -14,4 +14,4 @@ I would like to receive a series of randomised questions
 
 Diagram
 ---
-![Diagram](./assets/diagram.png)
+![Diagram](./assets/Diagram.png)

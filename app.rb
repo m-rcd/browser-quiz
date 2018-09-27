@@ -7,12 +7,14 @@ class BrowserQuiz < Sinatra::Base
     erb :index
   end
 
+  get '/questions' do
+  questions = Questions.all
+  @question = questions.sample
+  erb :questions
+end
+
   post '/questions' do
-    session[:name] = params[:name]
-    questions = Questions.new
-    session[:question] = questions.random_question
-    @question = session[:question]
-    erb :questions
+    redirect '/questions'
   end
 
   post '/answer' do
@@ -21,7 +23,6 @@ class BrowserQuiz < Sinatra::Base
     @answer = session[:answer]
     erb :answer
   end
-
 
   run! if app_file == $0
 end
